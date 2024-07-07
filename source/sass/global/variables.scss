@@ -1,0 +1,31 @@
+// Цвет текста
+$color-main: rgba(16, 38, 84, 1);
+$color-white: rgba(255, 255, 255, 1);
+$color-blue-accent: rgba(16, 58, 174, 1);
+$gradient-text: linear-gradient(127.61deg, rgb(209, 10, 66) 0%, rgb(0, 65, 202) 45.58%);
+
+// Цвет кнопок
+$color-outline-button: rgba(28, 51, 116, 1);
+$gradient-border: linear-gradient(148.82deg, rgb(209, 10, 66) 0.85%, rgb(0, 53, 159) 100%);
+
+$color-red-tub: rgba(209, 10, 66, 1);
+
+// Фон
+$bg-light: rgba(248, 249, 252, 1);
+$bg-red: rgba(237, 2, 51, 1);
+$gradient-main: linear-gradient(
+  90deg,
+  rgb(28, 52, 119) 0%,
+  rgb(28, 52, 119) 0.01%,
+  rgb(26, 53, 120) 39.11%,
+  rgb(115, 24, 75) 75.5%,
+  rgb(180, 2, 42) 100%
+);
+
+$bg-footer: rgba(3, 10, 26, 1);
+
+// Форма
+$color-error: rgba(255, 18, 31, 1);
+
+
+
