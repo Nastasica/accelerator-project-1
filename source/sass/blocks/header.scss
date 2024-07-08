@@ -1,0 +1,21 @@
+
+.header {
+  margin-bottom: 48px;
+}
+
+.header__inner {
+  min-height: 54px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__phone {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  color: $color-white;
+
+}
