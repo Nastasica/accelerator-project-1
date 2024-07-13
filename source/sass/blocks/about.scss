@@ -1,5 +1,6 @@
 .about {
-  min-height: 812px;
+  min-height: 400px;
+  margin-bottom: 40px;
 }
 
 .about__heading{
@@ -24,22 +25,95 @@ margin: 0;
 padding-bottom: 36px;
 }
 
+.about__media {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .about__img {
-  width: 100%;
+  display: inline;
   padding-bottom: 36px;
 }
 
+.about__img-image{
+  width:320px;
+  height: 280px;
+}
+
 .about__video {
-  width: 100%;
+  width: 320px;
+  height: 170px;
+  position: relative;
 }
 
 .about__video::after {
   content: "";
-  display: block;
-  background-color: rgba(20, 54, 122, 0.5);
+  position: absolute;
+  width: 320px;
+ height: 170px;
+ left: 0;
+ z-index: 1;
+background-color: rgba(20, 54, 122, 0.5);
+transition: opacity 0.3s;
 }
 
-.about__video-img {
+.about__video.playing::after {
+  opacity: 0;
+}
+
+.about__video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.about__video-image {
+  object-fit: cover;
+ width: 320px;
+ height: 170px;
 
 }
+
+.about__button {
+  position: absolute;
+  display: block;
+ background: $gradient-button;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.about__button::before  {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid $bg-red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);;
+  opacity: 0.2;
+  background-color: transparent;
+
+}
+
+
+.about__button svg {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

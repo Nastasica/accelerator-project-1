@@ -80,74 +80,79 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="about__media">
+          <div class="about__img">
+            <picture>
+              <source type="image/webp" srcset="img/main-img-desktop.webp 1x, img/main-img-desktop@2x.webp 2x"
+                media="(min-width: 1366px)" width="660" height="400">
+              <source type="image/png" srcset="img/main-img-desktop.png 1x, img/main-img-desktop@2x.png 2x"
+                media="(min-width: 1366px)" width="660" height="400">
+              <source type="image/webp" srcset="img/main-img-tablet.webp 1x, img/main-img-tablet@2x.webp 2x"
+                media="(max-width: 1365px)" width="678" height="345">
+              <source type="image/png" srcset="img/main-img-tablet.png 1x, img/main-img-tablet@2x.png 2x"
+                media="(max-width: 1365px)" width="678" height="345">
+              <source type="image/webp" srcset="img/main-img-mobile.webp 1x, img/main-img-mobile@2x.webp 2x"
+                media="(max-width: 767px)" width="320" height="280">
+              <source type="image/png" srcset="img/main-img-mobile.png 1x, img/main-img-mobile@2x.png 2x">
+              <img class="about__img-image" src="img/main-img-mobile.png" srcset="img/main-img-mobile@2x.png"
+                width="320" height="280" alt="Фото тренажерного зала">
+            </picture>
           </div>
-          <div class="about__media">
-            <div class="about__img">
-              <picture>
-                <source type="image/webp" srcset="img/main-img-desktop.webp 1x, img/main-img-desktop@2x.webp 2x"
-                  media="(min-width: 1366px)" width="660" height="400">
-                <source type="image/png" srcset="img/main-img-desktop.png 1x, img/main-img-desktop@2x.png 2x"
-                  media="(min-width: 1366px)" width="660" height="400">
-                <source type="image/webp" srcset="img/main-img-tablet.webp 1x, img/main-img-tablet@2x.webp 2x"
-                  media="(max-width: 1365px)" width="678" height="345">
-                <source type="image/png" srcset="img/main-img-tablet.png 1x, img/main-img-tablet@2x.png 2x"
-                  media="(max-width: 1365px)" width="678" height="345">
-                <source type="image/webp" srcset="img/main-img-mobile.webp 1x, img/main-img-mobile@2x.webp 2x"
-                  media="(max-width: 767px)" width="320" height="280">
-                <source type="image/png" srcset="img/main-img-mobile.png 1x, img/main-img-mobile@2x.png 2x">
-                <img src="img/main-img-mobile.png" srcset="img/main-img-mobile@2x.png" width="320" height="280"
-                  alt="Фото тренажерного зала">
-              </picture>
-            </div>
-            <div class="about__video">
-              <picture>
-                <source type="image/webp" srcset="img/poster-video-desktop.webp 1x, img/poster-video-desktop@2x.webp 2x"
-                  media="(min-width: 1366px)" width="360" height="230">
-                <source type="image/png" srcset="img/poster-video-desktop.png 1x, img/poster-video-desktop@2x.png 2x"
-                  media="(min-width: 1366px)" width="360" height="230">
-                <source type="image/webp" srcset="img/poster-video-tablet.webp 1x, img/poster-video-tablet@2x.webp 2x"
-                  media="(max-width: 1365px)" width="270" height="170">
-                <source type="image/png" srcset="img/poster-video-tablet.png 1x, img/poster-video-tablet@2x.png 2x"
-                  media="(max-width: 1365px)" width="270" height="170">
-                <source type="image/webp" srcset="img/poster-video-mobile.webp 1x, img/poster-video-mobile@2x.webp 2x"
-                  media="(max-width: 767px)" width="320" height="170">
-                <img class="about__video-img" src="img/poster-video-mobile.png" srcset="img/poster-video-mobile@2x.png" width="320" height="170"
-                  alt="фото тренажерного зала обложка видео">
-              </picture>
-              <a class="about__button" href="https://www.youtube.com/embed/9TZXsZItgdw">
-                <svg width="12" height="12">
-                  <use href="/__spritemap#sprite-icon-play"></use>
-                </svg>
+          <div class="about__video">
+            <picture>
+              <source type="image/webp" srcset="img/poster-video-desktop.webp 1x, img/poster-video-desktop@2x.webp 2x"
+                media="(min-width: 1366px)" width="360" height="230">
+              <source type="image/png" srcset="img/poster-video-desktop.png 1x, img/poster-video-desktop@2x.png 2x"
+                media="(min-width: 1366px)" width="360" height="230">
+              <source type="image/webp" srcset="img/poster-video-tablet.webp 1x, img/poster-video-tablet@2x.webp 2x"
+                media="(max-width: 1365px)" width="270" height="170">
+              <source type="image/png" srcset="img/poster-video-tablet.png 1x, img/poster-video-tablet@2x.png 2x"
+                media="(max-width: 1365px)" width="270" height="170">
+              <source type="image/webp" srcset="img/poster-video-mobile.webp 1x, img/poster-video-mobile@2x.webp 2x"
+                media="(max-width: 767px)" width="320" height="170">
+              <img class="about__video-image" src="img/poster-video-mobile.png" srcset="img/poster-video-mobile@2x.png"
+                width="320" height="170" alt="фото тренажерного зала обложка видео">
+            </picture>
+            <a class="about__button" href="https://www.youtube.com/watch?v=9TZXsZItgdw" id="play-button">
+              <svg width="12" height="12">
+                <use href="/__spritemap#sprite-icon-play"></use>
+              </svg>
 
-                <span class="visually-hidden">Показать видео ролик</span>
-              </a>
-            </div>
+              <span class="visually-hidden">Показать видео ролик</span>
+            </a>
+            <iframe class="about__video-iframe" data-youtube="9TZXsZItgdw" frameborder="0" allowfullscreen
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" title="Бесплатные интерактивные онлайн-курсы"
+    style="display: none;"></iframe>
+
           </div>
+        </div>
       </section>
 
 
       <section class="section abonements" id="abonements" data-test="price">
         <div class="container">
           <div class="abonements__inner">
-            <h2 class="heading">Абонементы</h2>
+            <h2 class="heading abonements__heading">Абонементы</h2>
             <div class="tabs no-transition-global" data-tabs="parent" data-delay="0" data-height="max">
               <div class="tabs__controls" data-tabs="controls">
-                <button class="tabs__control" type="button" data-tabs="control">1 месяц</button>
-                <button class="tabs__control" type="button" data-tabs="control">6 месяцев</button>
-                <button class="tabs__control" type="button" data-tabs="control">12 месяцев</button>
+                <button class="tabs__control tabs__control--active" type="button" data-period="period-1">1 месяц</button>
+                <button class="tabs__control" type="button" data-period="period-2">6 месяцев</button>
+                <button class="tabs__control" type="button" data-period="period-3">12 месяцев</button>
               </div>
               <div class="tabs__content" data-tabs="content">
-                <div class="tabs__element for-load" data-tabs="element">
+                <div class="tabs__element for-load tabs__element--active" data-tabs="element" data-period="period-1">
                   <ul class="list abonements__list">
                     <li class="abonements__item">
-                      <h3>С тренером</h3>
+                      <h3 class="abonements__item-heading">С тренером</h3>
                       <div class="abonements__description">
                         <p>12 занятий</p>
                       </div>
                       <div class="abonements__price">
                         <span class="abonements__price-bg">5000</span>
-                        <p aria-hidden="true">5000&nbsp;</p>
-                        <svg width="30" height="42">
+                        <p class="abonements__value" aria-hidden="true">5000&nbsp;</p>
+                        <svg width="24" height="33">
                           <use href="/__spritemap#sprite-icon-currency"></use>
                         </svg>
                       </div>
@@ -155,14 +160,14 @@
                     </li>
 
                     <li class="abonements__item">
-                      <h3>Дневной</h3>
+                      <h3 class="abonements__item-heading">Дневной</h3>
                       <div class="abonements__description">
                         <p>с 8:00 до 17:00</p>
                       </div>
                       <div class="abonements__price">
                         <span class="abonements__price-bg">1700</span>
-                        <p aria-hidden="true">1700&nbsp;</p>
-                        <svg width="30" height="42">
+                        <p class="abonements__value" aria-hidden="true">1700&nbsp;</p>
+                        <svg width="24" height="33">
                           <use href="/__spritemap#sprite-icon-currency"></use>
                         </svg>
                       </div>
@@ -170,14 +175,14 @@
                     </li>
 
                     <li class="abonements__item">
-                      <h3>Полный день</h3>
+                      <h3 class="abonements__item-heading">Полный день</h3>
                       <div class="abonements__description">
                         <p>с 8:00 до 22:00</p>
                       </div>
                       <div class="abonements__price">
                         <span class="abonements__price-bg">2700</span>
-                        <p aria-hidden="true">2700&nbsp;</p>
-                        <svg width="30" height="42">
+                        <p class="abonements__value" aria-hidden="true">2700</p>
+                        <svg width="24" height="33">
                           <use href="/__spritemap#sprite-icon-currency"></use>
                         </svg>
                       </div>
@@ -187,18 +192,18 @@
                 </div><!-- content-1 -->
 
 
-                <div class="tabs__element" data-tabs="element">
+                <div class="tabs__element" data-tabs="element" data-period="period-2">
                   <ul class="list abonements__list">
 
                     <li class="abonements__item">
-                      <h3>С тренером</h3>
+                      <h3 class="abonements__item-heading">С тренером</h3>
                       <div class="abonements__description">
                         <p>12 занятий</p>
                       </div>
                       <div class="abonements__price">
                         <span class="abonements__price-bg">25000</span>
-                        <p>25000&nbsp;</p>
-                        <svg width="30" height="42">
+                        <p class="abonements__value" aria-hidden="true">25000&nbsp;</p>
+                        <svg width="24" height="33">
                           <use href="/__spritemap#sprite-icon-currency"></use>
                         </svg>
                       </div>
@@ -206,14 +211,14 @@
                     </li>
 
                     <li class="abonements__item">
-                      <h3>Дневной</h3>
+                      <h3 class="abonements__item-heading">Дневной</h3>
                       <div class="abonements__description">
                         <p>с 8:00 до 17:00</p>
                       </div>
                       <div class="abonements__price">
                         <span class="abonements__price-bg">8500</span>
-                        <p>8500&nbsp;</p>
-                        <svg width="30" height="42">
+                        <p class="abonements__value" aria-hidden="true">8500&nbsp;</p>
+                        <svg width="24" height="33">
                           <use href="/__spritemap#sprite-icon-currency"></use>
                         </svg>
                       </div>
@@ -221,14 +226,14 @@
                     </li>
 
                     <li class="abonements__item">
-                      <h3>Полный день</h3>
+                      <h3 class="abonements__item-heading">Полный день</h3>
                       <div class="abonements__description">
                         <p>с 8:00 до 22:00</p>
                       </div>
                       <div class="abonements__price">
                         <span class="abonements__price-bg">13500</span>
-                        <p>13500&nbsp;</p>
-                        <svg width="30" height="42">
+                        <p class="abonements__value" aria-hidden="true">13500&nbsp;</p>
+                        <svg width="24" height="33">
                           <use href="/__spritemap#sprite-icon-currency"></use>
                         </svg>
                       </div>
@@ -238,18 +243,18 @@
                 </div><!-- content-2 -->
 
 
-                <div class="tabs__element" data-tabs="element">
+                <div class="tabs__element" data-tabs="element" data-period="period-3">
                   <ul class="list abonements__list">
 
                     <li class="abonements__item">
-                      <h3>С тренером</h3>
+                      <h3 class="abonements__item-heading">С тренером</h3>
                       <div class="abonements__description">
                         <p>12 занятий</p>
                       </div>
                       <div class="abonements__price">
                         <span class="abonements__price-bg">50000</span>
-                        <p>50000&nbsp;</p>
-                        <svg width="30" height="42">
+                        <p class="abonements__value" aria-hidden="true">50000&nbsp;</p>
+                        <svg width="24" height="33">
                           <use href="/__spritemap#sprite-icon-currency"></use>
                         </svg>
                       </div>
@@ -257,14 +262,14 @@
                     </li>
 
                     <li class="abonements__item">
-                      <h3>Дневной</h3>
+                      <h3 class="abonements__item-heading">Дневной</h3>
                       <div class="abonements__description">
                         <p>с 8:00 до 17:00</p>
                       </div>
                       <div class="abonements__price">
                         <span class="abonements__price-bg">17000</span>
-                        <p>17000&nbsp;</p>
-                        <svg width="30" height="42">
+                        <p class="abonements__value" aria-hidden="true">17000&nbsp;</p>
+                        <svg width="24" height="33">
                           <use href="/__spritemap#sprite-icon-currency"></use>
                         </svg>
                       </div>
@@ -272,14 +277,14 @@
                     </li>
 
                     <li class="abonements__item">
-                      <h3>Полный день</h3>
+                      <h3 class="abonements__item-heading">Полный день</h3>
                       <div class="abonements__description">
                         <p>с 8:00 до 22:00</p>
                       </div>
                       <div class="abonements__price">
                         <span class="abonements__price-bg">27000</span>
-                        <p>27000&nbsp;</p>
-                        <svg width="30" height="42">
+                        <p class="abonements__value" aria-hidden="true">27000&nbsp;</p>
+                        <svg width="24" height="33">
                           <use href="/__spritemap#sprite-icon-currency"></use>
                         </svg>
                       </div>
@@ -298,10 +303,10 @@
         <div class="container">
           <div class="games__inner">
             <div class="games__content">
-              <h2 class="heading">Super Games</h2>
-              <dl>
+              <h2 class="heading games__heading">Super Games</h2>
+              <dl class="games__datetime">
                 <dt>Дата</dt>
-                <dd>7 <span>Марта 2019</span></dd>
+                <dd>7<span>Марта<br>2019</span></dd>
                 <dt>Время</dt>
                 <dd>12:00</dd>
               </dl>
@@ -312,28 +317,23 @@
             </div>
             <div class="games__img">
               <picture>
-                <source type="image/webp" srcset="img/poster-desktop.webp 1x, img/poster-desktop@2x.webp 2x"
-                  media="(min-width: 1366px)" width="660" height="500">
-                <source type="image/png" srcset="img/poster-desktop.png 1x, img/poster-desktop@2x.png 2x"
-                  media="(min-width: 1366px)" width="378" height="348">
-                <source type="image/webp" srcset="img/poster-tablet.webp 1x, img/poster-tablet@2x.webp 2x"
-                  media="(max-width: 1365px)" width="378" height="348">
-                <source type="image/png" srcset="img/poster-tablet.png 1x, img/poster-tablet@2x.png 2x"
-                  media="(max-width: 1365px)" width="378" height="348">
-                <source type="image/webp" srcset="img/poster-mobile.webp 1x, img/poster-mobile@2x.webp 2x"
-                  media="(max-width: 767px)" width="290" height="290">
-                <img src="img/poster-mobile.png" srcset="img/poster-mobile@2x.png" width="290" height="290"
-                  alt="Постер соревнований по Crossfit">
+                <source type="image/webp" srcset="img/poster-desktop.webp 1x, img/poster-desktop@2x.webp 2x" media="(min-width: 1366px)">
+                <source type="image/png" srcset="img/poster-desktop.png 1x, img/poster-desktop@2x.png 2x" media="(min-width: 1366px)">
+                <source type="image/webp" srcset="img/poster-tablet.webp 1x, img/poster-tablet@2x.webp 2x" media="(min-width: 768px) and (max-width: 1365px)">
+                <source type="image/png" srcset="img/poster-tablet.png 1x, img/poster-tablet@2x.png 2x" media="(min-width: 768px) and (max-width: 1365px)">
+                <source type="image/webp" srcset="img/poster-mobile.webp 1x, img/poster-mobile@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/png" srcset="img/poster-mobile.png 1x, img/poster-mobile@2x.png 2x" media="(max-width: 767px)">
+                <img src="img/poster-mobile.png" srcset="img/poster-mobile@2x.png 2x" width="290" height="290" alt="Постер соревнований по Crossfit">
               </picture>
             </div>
+            </div>
           </div>
-        </div>
       </section>
 
 
       <section class="section juri" data-test="juri">
         <div class="container">
-          <h2 class="heading">Тренеры</h2>
+          <h2 class="heading juri__heading">Жюри</h2>
           <div class="juri__inner">
             <div class="swiper  juri__slider">
               <div class="swiper-wrapper">
@@ -352,10 +352,10 @@
                         width="260" height="300">
                       <img src="img/trainers/trainer-1-mobile.jpg" width="260" height="300" alt="фото тренера">
                     </picture>
-                    <h3>Анна Павлова</h3>
+                    <h3>Анна&nbsp;Павлова</h3>
                   </div>
                   <div class="juri__detail">
-                    <h3>Анна Павлова</h3>
+                    <h3>Анна&nbsp;Павлова</h3>
                     <div class="juri__type">
                       <span>CrossFit</span>
                     </div>
@@ -381,10 +381,10 @@
                         width="260" height="300">
                       <img src="img/trainers/trainer-2-mobile.jpg" width="260" height="300" alt="фото тренера">
                     </picture>
-                    <h3>Алексей Лавров</h3>
+                    <h3>Алексей&nbsp;Лавров</h3>
                   </div>
                   <div class="juri__detail">
-                    <h3>Алексей Лавров</h3>
+                    <h3>Алексей&nbsp;Лавров</h3>
                     <div class="juri__type">
                       <span>CrossFit</span>
                     </div>
@@ -411,10 +411,10 @@
                         width="260" height="300">
                       <img src="img/trainers/trainer-3-mobile.jpg" width="260" height="300" alt="фото тренера">
                     </picture>
-                    <h3>Александр Пашков</h3>
+                    <h3>Александр&nbsp;Пашков</h3>
                   </div>
                   <div class="juri__detail">
-                    <h3>Александр Пашков</h3>
+                    <h3>Александр&nbsp;Пашков</h3>
                     <div class="juri__type">
                       <span>CrossFit</span>
                     </div>
@@ -441,10 +441,10 @@
                         width="260" height="300">
                       <img src="img/trainers/trainer-4-mobile.jpg" width="260" height="300" alt="фото тренера">
                     </picture>
-                    <h3>Мария Кетова</h3>
+                    <h3>Мария&nbsp;Кетова</h3>
                   </div>
                   <div class="juri__detail">
-                    <h3>Мария Кетова</h3>
+                    <h3>Мария&nbsp;Кетова</h3>
                     <div class="juri__type">
                       <span>CrossFit</span>
                     </div>
@@ -471,10 +471,10 @@
                         width="260" height="300">
                       <img src="img/trainers/trainer-1-mobile.jpg" width="260" height="300" alt="фото тренера">
                     </picture>
-                    <h3>Анна Павлова2</h3>
+                    <h3>Анна&nbsp;Павлова2</h3>
                   </div>
                   <div class="juri__detail">
-                    <h3>Анна Павлова2</h3>
+                    <h3>Анна&nbsp;Павлова2</h3>
                     <div class="juri__type">
                       <span>CrossFit</span>
                     </div>
@@ -501,10 +501,10 @@
                         width="260" height="300">
                       <img src="img/trainers/trainer-2-mobile.jpg" width="260" height="300" alt="фото тренера">
                     </picture>
-                    <h3>Алексей Лавров2</h3>
+                    <h3>Алексей&nbsp;Лавров2</h3>
                   </div>
                   <div class="juri__detail">
-                    <h3>Алексей Лавров2</h3>
+                    <h3>Алексей&nbsp;Лавров2</h3>
                     <div class="juri__type">
                       <span>CrossFit</span>
                     </div>
@@ -531,10 +531,10 @@
                         width="260" height="300">
                       <img src="img/trainers/trainer-3-mobile.jpg" width="260" height="300" alt="фото тренера">
                     </picture>
-                    <h3>Александр Пашков2</h3>
+                    <h3>Александр&nbsp;Пашков2</h3>
                   </div>
                   <div class="juri__detail">
-                    <h3>Александр Пашков2</h3>
+                    <h3>Александр&nbsp;Пашков2</h3>
                     <div class="juri__type">
                       <span>CrossFit</span>
                     </div>
@@ -561,10 +561,10 @@
                         width="260" height="300">
                       <img src="img/trainers/trainer-4-mobile.jpg" width="260" height="300" alt="фото тренера">
                     </picture>
-                    <h3>Мария Кетова2</h3>
+                    <h3>Мария&nbsp;Кетова2</h3>
                   </div>
                   <div class="juri__detail">
-                    <h3>Мария Кетова2</h3>
+                    <h3>Мария&nbsp;Кетова2</h3>
                     <div class="juri__type">
                       <span>CrossFit</span>
                     </div>

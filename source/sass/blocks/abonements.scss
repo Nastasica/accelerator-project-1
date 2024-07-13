@@ -1,0 +1,82 @@
+.abonements {
+  min-height: 400px;
+}
+
+.abonements__heading {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.abonements__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+
+}
+
+.abonements__item {
+  background-color: $color-white;
+  padding: 50px 42px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.abonements__item-heading {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  padding-bottom: 18px;
+
+}
+
+.abonements__description p {
+  margin: 0;
+  padding-bottom: 66px;
+}
+
+.abonements__price {
+  position: relative;
+  z-index: 1;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  padding-bottom: 18px;
+}
+
+
+.abonements__price-bg {
+  position: absolute;
+  z-index: -1;
+  bottom: 12px;
+  left: 50%;
+font-size: 80px;
+font-weight: 700;
+line-height: 120px;
+  transform: translateX(-50%);
+  color: $color-gray;
+  opacity: 0.48;
+
+}
+
+.abonements__price p {
+  margin: 0;
+  display: inline;
+  color: $color-blue-accent;
+
+}
+
+
+
+.abonements__button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  color: $color-main;
+  padding: 25px 47px;
+  border: 2px solid $color-main;
+
+}

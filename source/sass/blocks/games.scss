@@ -1,0 +1,80 @@
+.games {
+  background-color: $color-white;
+  min-height: 300px;
+  color: $color-white;
+  padding-bottom: 40px;
+    margin: 0;
+}
+
+.games__content {
+  display: grid;
+  background-color: $bg-red;
+  grid-template-areas:
+    "heading datetime"
+    "description  description "
+    "btn btn";
+  gap: 1px 29px;
+  padding: 45px 44px 50px;
+}
+
+.games__heading {
+  grid-area: heading;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 54px;
+  color: $color-white;
+  text-align: left;
+
+}
+
+.games__datetime {
+  display: grid;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  grid-area: datetime;
+  margin: 0;
+}
+
+.games__datetime dd {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  margin: 0;
+font-size: 24px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+border-top: 1px solid $color-white;
+}
+
+.games__datetime span {
+font-size: 12px;
+font-weight: 400;
+line-height: 12px;
+text-align: left;
+
+}
+.games__description {
+  grid-area: description;
+  padding-bottom: 16px;
+}
+
+.games__description p {
+  margin: 0;
+}
+
+.games__button {
+  grid-area: btn;
+  color: $color-white;
+  border-color: $color-white;
+  text-align: center;
+  padding: 22px 40px;
+}
+
+.games__img img {
+  width: 290px;
+  height: 290px;
+}
