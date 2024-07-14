@@ -335,7 +335,7 @@
         <div class="container">
           <h2 class="heading juri__heading">Жюри</h2>
           <div class="juri__inner">
-            <div class="swiper  juri__slider">
+            <div class="swiper-container  juri__slider">
               <div class="swiper-wrapper">
                 <div class="juri__item swiper-slide" tabindex="0">
                   <div class="juri__preview">
@@ -576,7 +576,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
+              <div class="juri__pagination swiper-pagination"></div>
               <button class="juri__slider-button-prev swiper-button-prev" type="button" aria-label="Назад"></button>
               <button class="juri__slider-button-next swiper-button-next" type="button" aria-label="Вперед"></button>
             </div>
@@ -586,22 +586,8 @@
 
 
       <section class="section features" data-test="features">
-        <div class="container">
-          <h2 class="heading">Наши преимущества</h2>
+          <h2 class="features__heading heading">Наши преимущества</h2>
           <ul class="list features__list">
-            <li class="features__item features__item--center">
-              <div class="features__parametr">
-                <div class="features__value">
-                  <span>100</span>
-                </div>
-                <span>Тренажеров</span>
-              </div>
-              <div class="features__text">
-                <div class="features__description">
-                  <p>Современные тренажеры на&nbsp;все группы мышц</p>
-                </div>
-              </div>
-            </li>
             <li class="features__item">
               <div class="features__parametr">
                 <div class="features__value">
@@ -611,7 +597,7 @@
               </div>
               <div class="features__text">
                 <h3>Площадь</h3>
-                <div class="features__desc">
+                <div class="features__description">
                   <p>Занимайтесь без очередей и&nbsp;толкучки</p>
                 </div>
               </div>
@@ -626,12 +612,25 @@
               </div>
               <div class="features__text">
                 <h3>Собственная парковка</h3>
-                <div class="features__desc">
+                <div class="features__description">
                   <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
                 </div>
               </div>
             </li>
 
+            <li class="features__item features__item--center">
+              <div class="features__parametr features__parametr--center">
+                <div class="features__value features__value--center">
+                  <span>100</span>
+                </div>
+                <span>Тренажёров</span>
+              </div>
+              <div class="features__text">
+                <div class="features__description">
+                  <p>Современные тренажеры на&nbsp;все группы мышц</p>
+                </div>
+              </div>
+            </li>
             <li class="features__item">
               <div class="features__parametr">
                 <div class="features__value">
@@ -641,7 +640,7 @@
               </div>
               <div class="features__text">
                 <h3>Комфорт</h3>
-                <div class="features__desc">
+                <div class="features__description">
                   <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                 </div>
               </div>
@@ -656,30 +655,28 @@
               </div>
               <div class="features__text">
                 <h3>Тренерский опыт</h3>
-                <div class="features__desc">
+                <div class="features__description">
                   <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
                 </div>
               </div>
             </li>
           </ul>
-        </div>
       </section>
 
 
       <section class="section offers" data-test="offers">
-        <div class="container">
           <div class="offers__inner">
-            <h2 class="heading">Акции</h2>
+            <h2 class="offers__heading heading">Акции</h2>
             <ul class="list offers__list">
               <li class="offers__item offers__item--main">
                 <div class="offers__text">
                   <div class="offers__title offers__title--main">
-                    <h3>Год<span>4999</span></h3>
+                    <h3>Год</h3><span>4999</span>
                   </div>
-                  <div class="offers__description">
+                  <div class="offers__description offers__description--main">
                     <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
                   </div>
-                  <a class="button offers__button" href="#">Подробнее</a>
+                  <a class="button offers__button offers__button--main" href="#">Подробнее</a>
                 </div>
                 <div class="offers__img">
                   <picture>
@@ -723,10 +720,10 @@
 
       <section class="section faq" data-test="faq">
         <div class="container">
-          <h2 class="heading">Вопросы и ответы</h2>
+          <h2 class="faq__heading heading">Вопросы и ответы</h2>
           <div class="faq__inner">
             <div class="faq__tabs">
-              <button class="faq__tab active" type="button" data-tab="center">Центр</button>
+              <button class="faq__tab faq__tab--active" type="button" data-tab="center">Центр</button>
               <button class="faq__tab" type="button" data-tab="abonement">Абонемент</button>
               <button class="faq__tab" type="button" data-tab="services">Услуги</button>
               <button class="faq__tab" type="button" data-tab="rules">Правила</button>
@@ -735,11 +732,8 @@
               <div class="faq__accordion">
                 <div class="faq__accordion-item">
                   <button class="faq__accordion-header" type="button">
-                    <span>Как стать членом фитнес-клуба?</span>
+                    <span>Как стать членом<br>фитнес-центра?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
                   </button>
                   <div class="accordion-body">
                     <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
@@ -750,9 +744,6 @@
                   <button class="faq__accordion-header" type="button">
                     <span>Где можно посмотреть расписание?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
                   </button>
                   <div class="accordion-body">
                     <p>Вы можете ознакомиться с расписанием занятий на нашем сайте в разделе 'Расписание'. Там вы
@@ -766,9 +757,6 @@
                   <button class="faq__accordion-header" type="button">
                     <span>Есть ли кулеры в центре? Предоставляются ли полотенца?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
                   </button>
                   <div class="faq__accordion-body">
                     <p>Да, в нашем фитнес-клубе установлены кулеры с водой, которые расположены в нескольких зонах для
@@ -785,9 +773,6 @@
                   <button class="faq__accordion-header" type="button">
                     <span>Сколько тренеров работает в клубе и какова их квалификация?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
                   </button>
                   <div class="faq__accordion-body">
                     <p>В нашем фитнес-клубе работает более 20 квалифицированных тренеров, каждый из которых
@@ -805,9 +790,6 @@
                   <button class="faq__accordion-header" type="button">
                     <span>Занятия с тренером входят в абонемент?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
                   </button>
                   <div class="faq__accordion-body">
                     <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале
@@ -820,9 +802,6 @@
                   <button class="faq__accordion-header" type="button">
                     <span>Можно ли заморозить абонемент?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
                   </button>
                   <div class="faq__accordion-body">
                     <p>Да, у нас предусмотрена возможность заморозить абонемент. Вы можете временно приостановить
@@ -836,9 +815,6 @@
                   <button class="faq__accordion-header" type="button">
                     <span>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
                   </button>
                   <div class="faq__accordion-body">
                     <p>В нашем фитнес-клубе нет лимита по посещениям тренажерного зала – вы можете тренироваться в любое
@@ -850,9 +826,6 @@
                   <button class="faq__accordion-header" type="button">
                     <span>Что такое семейный доступ и доступ для друзей?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
                   </button>
                   <div class="faq__accordion-body">
                     <p>Семейный доступ — это специальное предложение нашего фитнес-клуба, которое позволяет вам и членам
@@ -874,9 +847,6 @@
                   <button class="faq__accordion-header" type="button">
                     <span>Предлагает ли клуб услуги по консультированию по вопросам питания?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
                   </button>
                   <div class="faq__accordion-body">
                     <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит
@@ -888,9 +858,6 @@
                   <button class="faq__accordion-header" type="button">
                     <span>Проводятся ли в клубе какие-либо мероприя или соревнования?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
                   </button>
                   <div class="faq__accordion-body">
                     <p>Да, у нас предусмотрена возможность заморозить абонемент. Вы можете временно приостановить
@@ -904,9 +871,6 @@
                   <button class="faq__accordion-header" type="button">
                     <span>Можно ли приобрести в центре спортивное питание?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
                   </button>
                   <div class="faq__accordion-body">
                     <p>Да, в нашем фитнес-клубе представлен широкий ассортимент спортивного питания. Мы предлагаем
@@ -918,9 +882,6 @@
                   <button class="faq__accordion-header" type="button">
                     <span>Есть ли в центре детская комната?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
                   </button>
                   <div class="faq__accordion-body">
                     <p>Да, в нашем фитнес-клубе есть специально оборудованная детская комната, где дети могут провести
@@ -937,9 +898,6 @@
                   <button class="faq__accordion-header" type="button">
                     <span>Есть ли в фитнес-центре дресс-код?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
                   </button>
                   <div class="faq__accordion-body">
                     <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду.
@@ -953,9 +911,6 @@
                   <button class="faq__accordion-header" type="button">
                     <span>Можно ли приводить с собой детей на тренировки?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
                   </button>
                   <div class="faq__accordion-body">
                     <p>Да, вы можете приводить своих детей с собой на тренировки в нашем фитнес-клубе. У нас есть
@@ -966,9 +921,6 @@
                   <button class="faq__accordion-header" type="button">
                     <span>Какие дополнительные правила посещения фитнес-центра?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
                   </button>
                   <div class="faq__accordion-body">
                     <p>Безопасность и Правила: Соблюдение всех предписанных безопасностей, таких как правильное
@@ -978,10 +930,7 @@
                 <div class="faq__accordion-item">
                   <button class="faq__accordion-header" type="button">
                     <span>Нужна ли медицинская справка для посещений залов и бассейна?</span>
-                    <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
-                    <svg width="42" height="42">
-                      <use href="/__spritemap#sprite-open"></use>
-                    </svg>
+                    <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>>
                   </button>
                   <div class="faq__accordion-body">
                     <p>Для посещения наших тренажерных залов медицинская справка не требуется. Однако, для посещения

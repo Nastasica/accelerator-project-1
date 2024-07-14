@@ -1,0 +1,99 @@
+.features {
+  background-color: $bg-light;
+  min-height: 300px;
+}
+
+.features__heading {
+  text-align: center;
+}
+
+.features__item {
+  min-height: 172px;
+  padding-bottom: 35px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+
+
+.features__parametr {
+  text-align: center;
+}
+
+.features__parametr span {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: $color-blue;
+
+}
+
+.features__value {
+  text-align: center;
+}
+
+.features__value span {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  text-align: left;
+  background: $gradient-text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.features__description {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: center;
+}
+
+.features__description p {
+  margin: 0;
+}
+
+.features__text h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+
+}
+
+.features__item--center {
+  min-height: 225px;
+  padding: 30px 67px;
+  background-color: $color-outline-button;
+  color: $color-white;
+  margin-bottom: 40px;
+}
+
+.features__parametr--center span {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+  color: $color-white;
+}
+
+.features__value--center span {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+font-size: 64px;
+font-weight: 700;
+line-height: 64px;
+text-align: center;
+  background: $color-white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
