@@ -1,0 +1,20 @@
+.content-group__item {
+  background-color: $bg-dark-blue;
+}
+
+.content-group__item--white{
+  background-color: $color-white;
+  padding: 40px 0;
+}
+
+.content-group__heading {
+color: $color-white;
+padding-bottom: 36px;
+}
+.content-group__heading--white{
+  color: $color-main;
+  padding-bottom: 42px;
+}
+.content-group__container{
+  padding: 70px 15px;
+}

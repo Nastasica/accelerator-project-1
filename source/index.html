@@ -732,10 +732,10 @@
               <div class="faq__accordion">
                 <div class="faq__accordion-item">
                   <button class="faq__accordion-header" type="button">
-                    <span>Как стать членом<br>фитнес-центра?</span>
+                    <span>Как стать членом фитнес-центра?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
                   </button>
-                  <div class="accordion-body">
+                  <div class="faq__accordion-body">
                     <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
                       При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
                   </div>
@@ -745,7 +745,7 @@
                     <span>Где можно посмотреть расписание?</span>
                     <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
                   </button>
-                  <div class="accordion-body">
+                  <div class="faq__accordion-body">
                     <p>Вы можете ознакомиться с расписанием занятий на нашем сайте в разделе 'Расписание'. Там вы
                       найдете
                       актуальную информацию о времени и типах тренировок, а также о доступных инструкторах. Кроме того,
@@ -930,7 +930,7 @@
                 <div class="faq__accordion-item">
                   <button class="faq__accordion-header" type="button">
                     <span>Нужна ли медицинская справка для посещений залов и бассейна?</span>
-                    <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>>
+                    <span class="visually-hidden">Открыть/закрыть ответ на вопрос.</span>
                   </button>
                   <div class="faq__accordion-body">
                     <p>Для посещения наших тренажерных залов медицинская справка не требуется. Однако, для посещения
@@ -948,10 +948,10 @@
 
       <section class="section reviews" data-test="reviews">
         <div class="container">
-          <h2 class="heading">Отзывы</h2>
+          <h2 class="reviews__heading heading">Отзывы</h2>
           <div class="reviews__inner">
             <div class="swiper reviews__slider">
-              <div class="swiper-wrapper">
+              <div class="swiper-wrapper reviews__wrapper">
                 <div class="reviews__item swiper-slide">
                   <div class="reviews__icon">
                     <picture>
@@ -975,7 +975,7 @@
                     <h3>Анна Орлова</h3>
                     <div class="reviews__comment">
                       <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
-                        обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                        обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет&nbsp;очередей&raquo;
                       </p>
                     </div>
                   </div>
@@ -1003,9 +1003,9 @@
                   <div class="reviews__content">
                     <h3>Анна Орлова</h3>
                     <div class="reviews__comment">
-                      <p>&laquo;Выбрал Supergym, потому что слышал много положительных отзывов. И не разочаровался! В
-                        клубе уютная атмосфера, всегда приветливый персонал и отличные тренажеры. Даже в часы пик можно
-                        найти свободное место для тренировки. Очень доволен своим выбором и рекомендую всем!&raquo;</p>
+                      <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                        обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет&nbsp;очередей&raquo;
+                      </p>
                     </div>
                   </div>
                 </div><!-- reviews__item -->
@@ -1032,10 +1032,9 @@
                   <div class="reviews__content">
                     <h3>Анна Орлова</h3>
                     <div class="reviews__comment">
-                      <p>&laquo;Занимаюсь в Supergym уже около шести месяцев. Приятно удивлена уровнем обслуживания:
-                        всегда приветливые администраторы и профессиональные тренеры. Оборудование современное и
-                        разнообразное, позволяющее выполнять любые упражнения. Особенно нравится, что в клубе
-                        поддерживается чистота и порядок&raquo;</p>
+                      <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                        обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет&nbsp;очередей&raquo;
+                      </p>
                     </div>
                   </div>
                 </div><!-- reviews__item -->
@@ -1052,27 +1051,25 @@
 
       <div class="content-group" data-test="form">
         <section class="content-group__item">
-          <div class="container">
+          <div class="container content-group__container">
             <h2 class="content-group__heading heading">Бесплатное занятие</h2>
             <form class="form content-group__content" action="https://echo.htmlacademy.ru" method="get">
               <p class="form__group">
-                <input id="ticket-name" name="name" type="text" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\- ]+$"
-                  required>
-                <label for="ticket-name">Имя.</label>
+                <input class="form__group-input" name="name" type="text" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\- ]+$" required>
+                <label for="form__group-input">Имя.</label>
               </p>
               <p class="form__group">
-                <input id="ticket-phone" name="phone" type="tel" placeholder="Телефон" pattern="^\+?[\d ()-]+$"
-                  required>
-                <label for="ticket-phone">Телефон.</label>
+                <input class="form__group-input" name="phone" type="tel" placeholder="Телефон" pattern="^\+?[\d ()-]+$" required>
+                <label for="form__group-input">Телефон.</label>
               </p>
-              <button class="form__submit btn" type="submit">Отправить</button>
+              <button class="form__submit-button button" type="submit">Отправить</button>
             </form>
           </div>
         </section>
 
-        <section class="content-group__item">
+        <section class="content-group__item content-group__item--white">
           <div class="container">
-            <h2 class="content-group__heading heading">Контакты</h2>
+            <h2 class="content-group__heading content-group__heading--white heading">Контакты</h2>
             <div class="dict content-group__content">
               <dl class="dict__item">
                 <dt class="dict__key">Адрес:</dt>
@@ -1096,39 +1093,39 @@
         <span class="footer__logo logo"><img class="logo__img" src="img/logo/logo.svg" width="130" height="26"
             alt="Логотип SUPERGYM"></span>
         <nav class="footer__wrapper">
-          <ul class="footer__nav nav">
+          <ul class="footer__nav navigation list">
             <li>
-              <a class="nav__link" href="#">
+              <a class="navigation__item" href="#">
                 Услуги
               </a>
             </li>
             <li>
-              <a class="nav__link" href="#">
+              <a class="navigation__item" href="#">
                 Абонементы
               </a>
             </li>
             <li>
-              <a class="nav__link" href="#">
+              <a class="navigation__item" href="#">
                 Акции
               </a>
             </li>
             <li>
-              <a class="nav__link" href="#">
+              <a class="navigation__item" href="#">
                 Тренеры
               </a>
             </li>
             <li>
-              <a class="nav__link" href="#">
+              <a class="navigation__item" href="#">
                 Расписание
               </a>
             </li>
           </ul>
         </nav>
-        <ul class="footer__socials socials">
+        <ul class="footer__socials socials list">
           <li class="socials__item">
             <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы Вконтакте.</span>
-              <svg width="25" height="25">
+              <svg width="13" height="8">
                 <use href="/__spritemap#sprite-icon-social-vk"></use>
               </svg>
             </a>
@@ -1136,7 +1133,7 @@
           <li class="socials__item">
             <a class="socials__link socials__link--ok" href="https://ok.ru/htmlacademy">
               <span class="visually-hidden">Мы в Одноклассниках.</span>
-              <svg width="25" height="25">
+              <svg width="10" height="17">
                 <use href="/__spritemap#sprite-icon-social-ok"></use>
               </svg>
             </a>
@@ -1144,7 +1141,7 @@
           <li class="socials__item">
             <a class="socials__link socials__link--reddit" href="https://reddit.com/htmlacademy">
               <span class="visually-hidden">Мы в Reddit.</span>
-              <svg width="25" height="25">
+              <svg width="15" height="15">
                 <use href="/__spritemap#sprite-icon-social-reddit"></use>
               </svg>
             </a>

@@ -1,0 +1,14 @@
+.socials {
+  display: flex;
+  column-gap: 20px;
+}
+
+.socials__link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: $color-white;
+  border-radius: 50%;
+}

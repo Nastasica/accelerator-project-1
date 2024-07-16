@@ -1,6 +1,7 @@
 .faq {
   background-color: $bg-light;
-  padding: 70px 0;
+  padding-top: 70px;
+  padding-bottom: 30px;
 }
 
 .faq__heading {
@@ -8,14 +9,14 @@
   padding-bottom: 35px;
 }
 
-.faq__tabs{
+.faq__tabs {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   padding-bottom: 35px;
   border-bottom: 1px solid rgba(116, 129, 156, 1);
-
 }
+
 .faq__tab {
   font-family: inherit;
   font-size: 16px;
@@ -27,26 +28,72 @@
   background-color: transparent;
   color: $color-main;
   width: 140px;
-
 }
+
 .faq__tab--active {
   color: $color-white;
   background: $gradient-button;
   border: none;
 }
 
-.faq__tab-content{
+.faq__tab-content {
   padding-top: 20px;
+  display: none;
 }
-.faq__accordion-header{
+
+.faq__tab-content.active {
+  display: block;
+}
+
+.faq__accordion-header {
+  position: relative;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-font-family: Roboto Condensed;
-font-size: 20px;
-font-weight: 400;
-line-height: 20px;
-text-align: left;
-border: none;
-background-color: transparent;
-color: $color-main;
-padding-right: 60px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  color: $color-main;
+  padding: 20px 0;
+  padding-right: 50px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(116, 129, 156, 1);
+}
+
+.faq__accordion-header.active {
+  border-bottom: none;
+}
+
+.faq__accordion-header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../../img/sprite/open.svg");
+  width: 42px;
+  height: 42px;
+  transition: transform 0.4s ease;
+}
+
+.faq__accordion-header.active::after {
+  background-image: url("../../img/sprite/close.svg");
+}
+
+.faq__accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq__accordion-body.show {
+  max-height: 500px;
+  border-bottom: 1px solid rgba(116, 129, 156, 1);
+}
+
+.faq__accordion-body p {
+  margin: 0;
+  padding: 20px 60px 20px 0;
 }

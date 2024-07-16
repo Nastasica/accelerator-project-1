@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  column-gap: 35px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.navigation__item {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $color-white;
+    text-align: left;
+
+}

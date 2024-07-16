@@ -1,0 +1,57 @@
+.reviews{
+  background-color: $color-white;
+  height: 480px;
+}
+
+.reviews__heading{
+ text-align: center;
+ padding-bottom: 40px;
+}
+
+.reviews__inner{
+  width: 260px;
+  margin: 0 auto;
+}
+
+.reviews__item{
+  background-color: $bg-blue;
+  max-width: 800px;
+  min-height: 328px;
+  padding: 30px 32px;
+  margin: 0 auto;
+}
+
+.reviews__icon{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.reviews__icon img {
+  width: 68px;
+  height: 68px;
+}
+.reviews__content{
+font-family: "Roboto Condensed", "Arial", sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 20px;
+color: $color-white;
+}
+
+.reviews__content h3{
+  margin: 0;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.reviews__comment{
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+font-size: 14px;
+font-weight: 300;
+line-height: 22px;
+text-align: center;
+}
+
+.reviews__comment p{
+  margin:0;
+}

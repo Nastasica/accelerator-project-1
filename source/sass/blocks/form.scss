@@ -1,0 +1,34 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 36px;
+}
+
+.form__group {
+  margin: 0;
+}
+
+.form__group-input {
+
+  border-bottom: 1px solid $color-border-inut;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: left;
+  background-color: $bg-dark-blue;
+  border: none;
+}
+.form__group-input::placeholder {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+
+.form__submit-button {
+  color: $color-white;
+  background: transparent;
+  border: 2px solid $color-white;
+}
