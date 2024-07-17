@@ -82,7 +82,9 @@ overflow: hidden;
 
 .juri__description li::before {
   content: "";
-  display: block;
+  display: flex;
+  align-self: start;
+  margin-top: 8px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -111,12 +113,14 @@ overflow: hidden;
   padding: 45px 42px 51px;
 }
 
-.juri__preview:hover + .juri__detail {
+.juri__preview:hover + .juri__detail,
+.juri__preview:focus + .juri__detail{
   display: flex;
   flex-direction: column;
     align-items: center;
   opacity: 0.89;
 }
-.juri__preview:hover h3 {
+.juri__preview:hover h3,
+.juri__preview:focus h3 {
   opacity: 0;
 }

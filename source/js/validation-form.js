@@ -6,21 +6,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const nameInput = document.getElementById('name');
     const phoneInput = document.getElementById('phone');
+    const nameError = document.getElementById('name-error');
+    const phoneError = document.getElementById('phone-error');
 
     let isValid = true;
 
+    // Очистка предыдущих сообщений об ошибках
+    nameInput.classList.remove('error');
+    nameError.classList.remove('active');
+    phoneInput.classList.remove('error');
+    phoneError.classList.remove('active');
+
+    // Валидация поля имени
     if (!/^[A-Za-zА-Яа-яЁё\- ]+$/.test(nameInput.value)) {
-      nameInput.setCustomValidity('Пожалуйста, введите только буквы и пробелы.');
+      nameInput.classList.add('error');
+      nameError.classList.add('active');
       isValid = false;
-    } else {
-      nameInput.setCustomValidity('');
     }
 
+    // Валидация поля телефона
     if (!/^\+?[\d ()-]+$/.test(phoneInput.value)) {
-      phoneInput.setCustomValidity('Пожалуйста, введите корректный номер телефона.');
+      phoneInput.classList.add('error');
+      phoneError.classList.add('active');
       isValid = false;
-    } else {
-      phoneInput.setCustomValidity('');
     }
 
     if (isValid) {

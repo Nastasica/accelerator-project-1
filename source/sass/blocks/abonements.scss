@@ -1,17 +1,38 @@
 .abonements {
   min-height: 400px;
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/price-decor-tablet.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom ;
+  }
 }
+
+@media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    .additional-catalog__promo {
+      background-image: url("../../img/price-decor-tablett@2x.png");
+    }
+  }
+
 
 .abonements__heading {
   text-align: center;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 35px;
+    padding-bottom: 22px;
+  }
 }
 
 .abonements__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 }
 
@@ -20,6 +41,12 @@
   padding: 50px 42px;
   margin-bottom: 35px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 380px;
+    padding: 65px;
+    margin-bottom: 40px;
+  }
 }
 
 .abonements__item-heading {
@@ -28,6 +55,11 @@
   font-weight: 700;
   line-height: 22px;
   padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 
 }
 
@@ -43,6 +75,9 @@
   font-weight: 700;
   line-height: 72px;
   padding-bottom: 18px;
+  @media (min-width: $tablet-width) {
+   padding-bottom: 22px;
+  }
 }
 
 
@@ -51,9 +86,9 @@
   z-index: -1;
   bottom: 12px;
   left: 50%;
-font-size: 80px;
-font-weight: 700;
-line-height: 120px;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 120px;
   transform: translateX(-50%);
   color: $color-gray;
   opacity: 0.48;
@@ -78,5 +113,8 @@ line-height: 120px;
   color: $color-main;
   padding: 25px 47px;
   border: 2px solid $color-main;
+  @media (min-width: $tablet-width) {
+    padding: 27px 44px;
+  }
 
 }

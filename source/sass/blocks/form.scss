@@ -9,22 +9,50 @@
 }
 
 .form__group-input {
-
-  border-bottom: 1px solid $color-border-inut;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
   text-align: left;
+  width: 100%;
   background-color: $bg-dark-blue;
+  color: $color-border-input;
   border: none;
+  border-bottom: 1px solid $color-border-input;
+  outline: none;
 }
+
 .form__group-input::placeholder {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   text-align: left;
+}
+
+.form__group-input:focus {
+  border-bottom: 1px solid $color-white;
+  background-color: $bg-dark-blue;
+  color: $color-white;
+}
+
+.form__group-input.error {
+  border-bottom: 1px solid $color-error;
+  color: $color-white;
+}
+
+.form__error-message {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: rgba(255, 18, 31, 1);
+  display: none;
+}
+
+.form__error-message.active {
+  display: block;
 }
 
 .form__submit-button {
