@@ -1,18 +1,29 @@
 .abonements {
   min-height: 400px;
+
   @media (min-width: $tablet-width) {
     background-image: url("../../img/price-decor-tablet.png");
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: bottom ;
+    background-position-y: bottom;
+    background-size: 275px 328px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/price-decor-desktop.png");
+    background-size: 321px 384px;
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    background-image: url("../../img/price-decor-tablet@2x.png");
+    background-size: 275px 328px;
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    background-image: url("../../img/price-decor-desktop@2x.png");
+    background-size: 321px 384px;
   }
 }
-
-@media (min-width: $tablet-width) and (min-resolution: 2dppx) {
-    .additional-catalog__promo {
-      background-image: url("../../img/price-decor-tablett@2x.png");
-    }
-  }
 
 
 .abonements__heading {
@@ -32,6 +43,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    column-gap: 40px;
   }
 
 }
@@ -75,8 +91,9 @@
   font-weight: 700;
   line-height: 72px;
   padding-bottom: 18px;
+
   @media (min-width: $tablet-width) {
-   padding-bottom: 22px;
+    padding-bottom: 22px;
   }
 }
 
@@ -113,6 +130,7 @@
   color: $color-main;
   padding: 25px 47px;
   border: 2px solid $color-main;
+
   @media (min-width: $tablet-width) {
     padding: 27px 44px;
   }

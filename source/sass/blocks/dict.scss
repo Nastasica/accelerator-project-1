@@ -1,3 +1,20 @@
+.dict {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+  }
+  & > :first-child {
+    @media (min-width: $tablet-width) {
+      padding-right: 30px;
+      border-right: 1px solid $color-border-input;
+    }
+  }
+}
+
+
 .dict__item {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
@@ -5,21 +22,31 @@
   line-height: 20px;
   margin: 0;
   text-align: left;
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
+
 .dict__value {
-font-family: inherit;
-font-size: 14px;
-font-weight: 400;
-line-height: 20px;
-color: $color-main;
-text-align: left;
-margin: 0;
-padding-bottom: 28px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color-main;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 28px;
+  @media (min-width: $tablet-width) {
+  line-height: 22px;
+  }
 
 }
+
 .dict__item:last-child {
   padding-bottom: 0;
 }
+
 .dict__value a {
   color: $color-main;
 }

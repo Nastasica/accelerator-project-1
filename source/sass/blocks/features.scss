@@ -1,10 +1,29 @@
 .features {
   background-color: $bg-light;
   min-height: 300px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .features__heading {
   text-align: center;
+}
+
+.features__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    justify-items: center;
+    align-items: start;
+
+  }
+
 }
 
 .features__item {
@@ -12,12 +31,24 @@
   padding-bottom: 35px;
   padding-left: 35px;
   padding-right: 35px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    column-gap: 15px;
+
+  }
+
 }
 
 
 
 .features__parametr {
   text-align: center;
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .features__parametr span {
@@ -32,6 +63,9 @@
 
 .features__value {
   text-align: center;
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .features__value span {
@@ -53,6 +87,10 @@
   font-weight: 300;
   line-height: 22px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .features__description p {
@@ -66,6 +104,9 @@
   line-height: 20px;
   text-align: center;
   margin: 0;
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 
 }
 
@@ -75,6 +116,13 @@
   background-color: $color-outline-button;
   color: $color-white;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    flex-direction: column;
+    grid-column: 1 / 3;
+    row-gap: 25px;
+  }
 }
 
 .features__parametr--center span {
@@ -88,10 +136,10 @@
 
 .features__value--center span {
   font-family: "Roboto Condensed", "Arial", sans-serif;
-font-size: 64px;
-font-weight: 700;
-line-height: 64px;
-text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  text-align: center;
   background: $color-white;
   background-clip: text;
   -webkit-background-clip: text;

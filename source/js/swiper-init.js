@@ -7,8 +7,14 @@ import 'swiper/css/pagination';
 document.addEventListener('DOMContentLoaded', () => {
   new Swiper('.swiper-container', {
     modules: [Navigation, Pagination],
+    slidesPerView: 1,
     direction: 'horizontal',
     loop: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      }
+    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,

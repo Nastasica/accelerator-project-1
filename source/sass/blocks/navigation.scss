@@ -4,6 +4,10 @@
   row-gap: 20px;
   flex-wrap: wrap;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .navigation__item {
@@ -13,5 +17,7 @@
   line-height: 20px;
   color: $color-white;
   text-align: left;
-
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
 }

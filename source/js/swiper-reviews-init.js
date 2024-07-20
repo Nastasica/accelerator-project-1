@@ -5,17 +5,18 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 document.addEventListener('DOMContentLoaded', () => {
+
   new Swiper('.reviews__slider', {
     modules: [Navigation, Pagination],
     direction: 'horizontal',
     loop: false,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.reviews__pagination',
       clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.reviews__slider-button-next',
+      prevEl: '.reviews__slider-button-prev',
     },
     on: {
       init: function() {
@@ -30,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function updateNavigationButtons(swiper) {
-    const prevButton = document.querySelector('.swiper-button-prev');
-    const nextButton = document.querySelector('.swiper-button-next');
+    const prevButton = swiper.navigation.prevEl;
+    const nextButton = swiper.navigation.nextEl;
 
     if (swiper.isBeginning) {
       prevButton.classList.add('swiper-button-disabled');

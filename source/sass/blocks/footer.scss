@@ -5,5 +5,17 @@
 
 .footer__logo {
   margin-bottom: 30px;
+  @media (min-width: $tablet-width) {
+  margin:0;
+  }
 }
 
+.footer__container{
+  @media (min-width: $tablet-width) {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+  }
+}

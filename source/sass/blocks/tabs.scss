@@ -25,6 +25,10 @@
     font-size: 18px;
     line-height: 18px;
   }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 
   &--active {
     text-decoration: underline;
