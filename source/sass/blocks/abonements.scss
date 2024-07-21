@@ -77,6 +77,10 @@
     line-height: 24px;
   }
 
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
 }
 
 .abonements__description p {
@@ -93,7 +97,12 @@
   padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 22px;
+    margin-bottom: 22px;
+  }
+  @media (min-width: $tablet-width) {
+font-size: 60px;
+line-height: 90px;
+
   }
 }
 
@@ -109,6 +118,11 @@
   transform: translateX(-50%);
   color: $color-gray;
   opacity: 0.48;
+  @media (min-width: $tablet-width) {
+font-size: 100px;
+line-height: 150px;
+
+  }
 
 }
 

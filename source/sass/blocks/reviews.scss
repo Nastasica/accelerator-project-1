@@ -6,15 +6,22 @@
     padding: 60px 0 35px;
     position: relative;
   }
-
   @media (min-width: $desktop-width) {
-    padding: 100px 0 75px;
+    padding: 0;
+    padding-bottom: 100px;
+    margin: 0;
   }
 }
 
 .reviews__heading {
   text-align: center;
   padding-bottom: 40px;
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 35px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 100px 0 75px;
+  }
 }
 
 .reviews__inner {

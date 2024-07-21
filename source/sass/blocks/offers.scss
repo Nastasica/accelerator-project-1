@@ -7,6 +7,9 @@
   @media (min-width: $tablet-width) {
     margin: 0 45px;
   }
+  @media (min-width: $desktop-width) {
+    margin: 0 103px;
+  }
 }
 
 .offers__heading {
@@ -17,12 +20,22 @@
    padding-top: 60px
 
   }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 70px;
+    padding-top: 100px
+
+   }
 }
 .offers__list{
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: end;
+    column-gap: 40px;
   }
 }
 .offers__text {
@@ -48,6 +61,12 @@
     grid-template-columns: 324px 324px;
     column-gap: 30px;
   }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 40px;
+  }
 }
 .offers__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -66,6 +85,10 @@
 .offers__button--main {
   color: $color-white;
   border-color: $color-white;
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: auto;
+  }
 }
 
 .offers__title--main {
@@ -106,6 +129,23 @@
   }
 }
 
+
+
+.offers__description p {
+  margin: 0;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+   padding: 0;
+   font-size: 16px;
+   line-height: 24px;
+   padding-bottom: 30px;
+  }
+  @media (min-width: $desktop-width) {
+   padding: 0;
+   margin-bottom: 40px;
+  }
+}
 .offers__description--main {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
@@ -120,20 +160,14 @@ padding-bottom: 160px;
 text-align: left;
   }
 
+
 }
-
-.offers__description p {
-  margin: 0;
-  padding-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-   padding: 0;
-   font-size: 16px;
-   line-height: 24px;
-   padding-bottom: 30px;
+.offers__description--main p{
+   @media (min-width: $tablet-width) {
+    padding:0;
+    margin: 0;
   }
 }
-
 .offers__img {
   display: flex;
   justify-content: center;
@@ -173,6 +207,9 @@ text-align: left;
   @media (min-width: $tablet-width) {
     text-align: left;
   }
+  @media (min-width: $desktop-width) {
+   margin: 0;
+  }
 }
 
 .offers__item--main {
@@ -182,6 +219,10 @@ text-align: left;
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: stretch;
+  }
+  @media (min-width: $desktop-width) {
+    width: 100%;
+
   }
 }
 

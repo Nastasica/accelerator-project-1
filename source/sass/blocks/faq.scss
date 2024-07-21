@@ -2,15 +2,29 @@
   background-color: $bg-light;
   padding-top: 70px;
   padding-bottom: 30px;
+
   @media (min-width: $tablet-width) {
-   padding-top: 0;
+    padding-top: 0;
   }
 
+}
+
+.faq__inner {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    column-gap: 40px;
+  }
 }
 
 .faq__heading {
   text-align: center;
   padding-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: left;
+  }
 }
 
 .faq__tabs {
@@ -19,8 +33,14 @@
   gap: 10px;
   padding-bottom: 35px;
   border-bottom: 1px solid rgba(116, 129, 156, 1);
+
   @media (min-width: $tablet-width) {
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    height: 250px;
   }
 }
 
@@ -35,10 +55,16 @@
   background-color: transparent;
   color: $color-main;
   width: 140px;
+
   @media (min-width: $tablet-width) {
     width: 162px;
     font-size: 18px;
-  line-height: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+    padding: 18px 48px;
   }
 }
 
@@ -71,12 +97,17 @@
   padding-right: 50px;
   cursor: pointer;
   border-bottom: 1px solid $color-border-input;
+
   @media (min-width: $tablet-width) {
     font-size: 22px;
     line-height: 22px;
   }
 }
-
+.faq__accordion-header:first-child {
+  @media (min-width: $desktop-width) {
+    border-top: 1px solid $color-border-input;
+  }
+}
 .faq__accordion-header.active {
   border-bottom: none;
 }
@@ -102,17 +133,22 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
+
 }
 
 .faq__accordion-body.show {
   max-height: 500px;
   border-bottom: 1px solid $color-border-input;
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
   }
+  // @media (min-width: $desktop-width) {
+  //   padding-bottom: 23px;
+  // }
 }
 
-.faq__accordion-item{
+.faq__accordion-item {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -122,4 +158,9 @@
 .faq__accordion-body p {
   margin: 0;
   padding: 20px 60px 20px 0;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 200px;
+    padding-bottom: 23px;
+  }
 }

@@ -12,6 +12,9 @@
       border-right: 1px solid $color-border-input;
     }
   }
+  @media (min-width: $desktop-width) {
+    justify-content: normal;
+  }
 }
 
 
