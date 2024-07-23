@@ -10,6 +10,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1366px;
+    margin: 0 auto;
     background-image: url("../../img/price-decor-desktop.png");
     background-size: 321px 384px;
   }
@@ -53,6 +55,7 @@
 }
 
 .abonements__item {
+  position: relative;
   background-color: $color-white;
   padding: 50px 42px;
   margin-bottom: 35px;
@@ -64,6 +67,7 @@
     margin-bottom: 40px;
   }
 }
+
 
 .abonements__item-heading {
   margin: 0;
@@ -99,9 +103,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 22px;
   }
+
   @media (min-width: $tablet-width) {
-font-size: 60px;
-line-height: 90px;
+    font-size: 60px;
+    line-height: 90px;
 
   }
 }
@@ -118,9 +123,10 @@ line-height: 90px;
   transform: translateX(-50%);
   color: $color-gray;
   opacity: 0.48;
+
   @media (min-width: $tablet-width) {
-font-size: 100px;
-line-height: 150px;
+    font-size: 100px;
+    line-height: 150px;
 
   }
 
@@ -136,6 +142,8 @@ line-height: 150px;
 
 
 .abonements__button {
+  position: relative;
+  z-index: 1;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
@@ -149,4 +157,44 @@ line-height: 150px;
     padding: 27px 44px;
   }
 
+  &:hover {
+    background-image: $gradient-button;
+    color: $color-white;
+    border: none;
+  }
+
+  &:focus {
+    background-color: $gradient-button;
+    opacity: 0.8;
+    border: 2px solid $color-black;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+
+  }
+
+  &.disabled {
+    border: 2px solid rgba(16, 38, 84, 0.3);
+    color: rgba(16, 38, 84, 0.3);
+    outline: none;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.abonements__item--active::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 7px solid transparent;
+  border-image: $gradient-border;
+  border-image-slice: 1;
+  pointer-events: none;
 }

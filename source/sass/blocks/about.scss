@@ -7,6 +7,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1366px;
+    margin: 0 auto;
     display: flex;
     padding: 0 103px;
     column-gap: 145px;
@@ -188,9 +190,15 @@
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
   z-index: 2;
+}
+
+.about__video-style {
+  border: none;
+  display: none;
 }
 
 .about__video-image {
@@ -223,6 +231,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  color: $color-white;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -230,11 +239,12 @@
     top: 50%;
     left: 44%;
   }
+
   @media (min-width: $desktop-width) {
     left: 50%;
     width: 72px;
     height: 72px;
-   }
+  }
 }
 
 .about__button::before {
@@ -252,6 +262,10 @@
   opacity: 0.2;
   background-color: transparent;
 
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 
@@ -262,4 +276,57 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.about__button:hover {
+  background-image: none;
+  background-color: $color-white;
+  color: rgba(16, 38, 84, 0.6);
+}
+
+.about__button:hover:before {
+  border-color: $color-main;
+  opacity: 0.6;
+}
+
+.about__button:focus {
+  background-image: none;
+  color: $color-main;
+  background-color: $color-button-disabled;
+  outline: none;
+}
+
+.about__button:focus:before {
+  border-color: $color-main;
+}
+
+.about__button:active {
+  width: 42px;
+  height: 42px;
+  background-color: $color-white;
+  background-image: none;
+}
+
+.about__button:active:before {
+  border-color: $color-main;
+  opacity: 1
+}
+
+.about__button:disabled {
+  background-color: $color-white;
+  background-image: none;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.about__button:disabled:before {
+  border-color: $color-main;
+  opacity: 0.4;
+}
+
+.about__button--disabled {
+  background-color: $color-white;
+  background-image: none;
+  opacity: 0.4;
+  pointer-events: none;
 }

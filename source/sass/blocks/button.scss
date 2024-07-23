@@ -18,7 +18,8 @@
   color: $color-blue-text-button;
   background-color: $color-white;
   opacity: 0.8;
-  outline: 2px solid rgba(0, 0, 0, 1);
+  border: 2px solid $color-black;
+  outline: none;
 }
 
 .button:active {
@@ -27,9 +28,10 @@ color: $color-main;
 outline: none;
 }
 
-.button:disabled {
-  background-color: $color-white;
-  opacity: 0.5;
+.button .disabled {
+  background-color: rgba(255, 255, 255, 0.5);
   color: rgba(255, 255, 255, 0.5);
-  outline: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+  pointer-events: none;
 }

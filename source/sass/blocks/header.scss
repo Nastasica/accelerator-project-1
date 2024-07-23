@@ -13,9 +13,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
   @media (min-width: $desktop-width) {
     min-height: 86px;
-   }
+  }
 }
 
 .header__phone {
@@ -29,8 +30,32 @@
     font-size: 24px;
     line-height: 24px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 26px;
     line-height: 26px;
   }
+}
+
+.header__phone:hover {
+  color: $color-outline-button;
+  opacity: 0.5;
+}
+
+.header__phone:focus {
+  color: $color-outline-button;
+}
+
+.header__phone:active {
+  color: $color-main;
+  text-decoration: underline;
+  text-decoration-color: $color-main;
+  text-decoration-thickness: 1px;
+  text-underline-position: under;
+}
+
+.header__phone--disabled {
+  color: $bg-light;
+  opacity: 0.5;
+  pointer-events: none;
 }

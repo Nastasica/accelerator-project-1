@@ -11,4 +11,31 @@
   height: 25px;
   background-color: $color-white;
   border-radius: 50%;
+  color: $color-main;
+}
+.socials__link:hover {
+  color:$color-white;
+  background-color: $color-text-input;
+}
+
+.socials__link:focus {
+  color:$color-white;
+  background-color:$color-blue-accent;
+  outline: none;
+}
+
+.socials__link:active {
+  color:$color-white;
+  background-color: $color-main;
+}
+
+.socials__link:disabled {
+  opacity: .3;
+  pointer-events: none
+}
+
+.socials__link--disabled {
+  opacity: .3;
+  color: $bg-dark;
+  pointer-events: none;
 }
