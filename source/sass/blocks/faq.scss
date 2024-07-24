@@ -114,7 +114,6 @@
   padding: 20px 0;
   padding-right: 50px;
   cursor: pointer;
-  border-bottom: 1px solid $color-text-input;
 
   @media (min-width: $tablet-width) {
     font-size: 22px;
@@ -126,7 +125,19 @@
     border-top: 1px solid $color-text-input;
   }
 }
+.faq__accordion-header:hover::after{
+  background-image: url("../../img/sprite/button-hover.svg");
+  background-repeat: no-repeat;
+}
 
+.faq__accordion-header:focus::after{
+  background-image: url("../../img/sprite/button-focus.svg");
+  background-repeat: no-repeat;
+}
+.faq__accordion-header:disabled::after{
+  background-image: url("../../img/sprite/button-disabled.svg");
+  background-repeat: no-repeat;
+}
 .faq__accordion-header.active {
   border-bottom: none;
 }
@@ -142,6 +153,7 @@
   width: 42px;
   height: 42px;
   transition: transform 0.4s ease;
+
 }
 
 .faq__accordion-header.active::after {
@@ -157,7 +169,6 @@
 
 .faq__accordion-body.show {
   max-height: 500px;
-  border-bottom: 1px solid $color-text-input;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -171,6 +182,10 @@
     flex-direction: column;
   }
 }
+.faq__accordion-item:last-child{
+  border-bottom: 1px solid $color-text-input;
+}
+
 
 .faq__accordion-body p {
   margin: 0;

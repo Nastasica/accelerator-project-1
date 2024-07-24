@@ -24,7 +24,8 @@
 }
 
 .about__heading {
-  padding-bottom: 12px;
+  padding-bottom: 11px;
+  padding-top: 2px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 20px;
@@ -72,7 +73,9 @@
 .about__subtitle p {
   margin: 0;
 }
-
+.about__description{
+  padding-bottom: 35px;
+}
 .about__description p:last-child {
   display: none;
 
@@ -94,8 +97,8 @@
 }
 
 .about__media {
-  width: 320px;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -107,45 +110,44 @@
   }
 }
 
+.about__media {
+  margin: 0 auto;
+}
+
 .about__img {
-  display: inline;
-  padding-bottom: 36px;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-  }
-}
-
-.about__img picture {
-  @media (min-width: $desktop-width) {
-    display: flex;
-  }
-}
-
-.about__img-image {
-  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 280px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
-    width: 678px;
     height: 345px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 660px;
     height: 400px;
   }
 }
 
+.about__img picture {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.about__img-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .about__video {
-  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 170px;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -202,9 +204,10 @@
 }
 
 .about__video-image {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  width: 320px;
-  height: 170px;
 
   @media (min-width: $tablet-width) {
     object-fit: contain;
@@ -227,7 +230,7 @@
   border-radius: 50%;
   width: 52px;
   height: 52px;
-  top: 50%;
+  top: 83%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;

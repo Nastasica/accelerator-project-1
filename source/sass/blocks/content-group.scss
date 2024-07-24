@@ -19,7 +19,12 @@
     border-top: 1px solid $color-border-input ;
   }
 }
-
+.content-group__container{
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: auto;
+  }
+}
 .content-group__heading {
   color: $color-white;
   padding-bottom: 36px;

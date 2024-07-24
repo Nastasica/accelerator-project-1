@@ -1,5 +1,6 @@
 .abonements {
   min-height: 400px;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/price-decor-tablet.png");
@@ -57,8 +58,8 @@
 .abonements__item {
   position: relative;
   background-color: $color-white;
-  padding: 50px 42px;
-  margin-bottom: 35px;
+  padding: 50px 42px 72px 42px;
+  margin-bottom: 37px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -89,7 +90,7 @@
 
 .abonements__description p {
   margin: 0;
-  padding-bottom: 66px;
+  padding-bottom: 61px;
 }
 
 .abonements__price {
@@ -98,7 +99,7 @@
   font-size: 48px;
   font-weight: 700;
   line-height: 72px;
-  padding-bottom: 18px;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 22px;
@@ -134,12 +135,10 @@
 
 .abonements__price p {
   margin: 0;
-  display: inline;
+  display: inline-block;
+  margin-top: 5px;
   color: $color-blue-accent;
-
 }
-
-
 
 .abonements__button {
   position: relative;
@@ -150,7 +149,7 @@
   font-weight: 700;
   line-height: 12px;
   color: $color-main;
-  padding: 25px 47px;
+  padding: 22px 47px 25px 47px;
   border: 2px solid $color-main;
 
   @media (min-width: $tablet-width) {

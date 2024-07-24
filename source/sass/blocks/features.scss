@@ -1,6 +1,7 @@
 .features {
   background-color: $bg-light;
   min-height: 300px;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -15,6 +16,7 @@
 
 .features__heading {
   text-align: center;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 50px;
@@ -65,6 +67,7 @@
 
 .features__parametr {
   text-align: center;
+  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -140,6 +143,7 @@
   line-height: 20px;
   text-align: center;
   margin: 0;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -152,11 +156,12 @@
 }
 
 .features__item--center {
-  min-height: 225px;
+  height: 227px;
   padding: 30px 67px;
   background-color: $color-outline-button;
   color: $color-white;
   margin-bottom: 40px;
+  margin-top: 3px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -199,7 +204,9 @@
   }
 
 }
-
+.features__parametr--center {
+  padding-bottom: 20px;
+}
 .features__parametr--center span {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 22px;
@@ -207,6 +214,7 @@
   line-height: 22px;
   text-align: center;
   color: $color-white;
+
 
   @media (min-width: $tablet-width) {
     padding-bottom: 25px;
@@ -218,7 +226,9 @@
 
   }
 }
-
+.features__value--center {
+  padding-bottom: 5px;
+}
 .features__value--center span {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 64px;
@@ -229,6 +239,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 
   @media (min-width: $tablet-width) {
     padding-bottom: 25px;
