@@ -32,7 +32,7 @@
     "btn btn";
   row-gap: 16px;
   padding: 41px;
-  column-gap: 110px;
+  column-gap: 112px;
 
   @media (min-width: $tablet-width) {
     padding: 40px;
@@ -73,6 +73,7 @@
 .games__datetime {
   display: flex;
   flex-direction: column;
+  width: 56px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -99,6 +100,7 @@
   text-align: left;
   height: 16px;
   margin-bottom: 9px;
+
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;

@@ -30,12 +30,12 @@
 }
 
 .socials__link:disabled {
-  opacity: .3;
+  opacity: 0.3;
   pointer-events: none
 }
 
 .socials__link--disabled {
-  opacity: .3;
+  opacity: 0.3;
   color: $bg-dark;
   pointer-events: none;
 }

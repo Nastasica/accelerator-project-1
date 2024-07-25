@@ -116,7 +116,7 @@
 .abonements__price-bg {
   position: absolute;
   z-index: -1;
-  bottom: 12px;
+  bottom: 37px;
   left: 50%;
   font-size: 80px;
   font-weight: 700;
@@ -170,14 +170,14 @@
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba($color-white, 0.7);
     border: none;
 
   }
 
   &.disabled {
-    border: 2px solid rgba(16, 38, 84, 0.3);
-    color: rgba(16, 38, 84, 0.3);
+    border: 2px solid rgba($color-main, 0.3);
+    color: rgba($color-main, 0.3);
     outline: none;
     cursor: not-allowed;
     pointer-events: none;

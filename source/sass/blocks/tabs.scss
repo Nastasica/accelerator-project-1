@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  border-bottom: 2px solid rgba($color-tabs-border, 0.2);
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
@@ -20,7 +20,7 @@
   line-height: 16px;
   border: none;
   padding: 10px 0 8px 0;
-  color: rgba(16, 38, 84, 0.5);
+  color: rgba($color-main, 0.5);
   background-color: $bg-light;
 
   @media (min-width: $tablet-width) {
@@ -45,54 +45,54 @@
 }
 
 .tabs__control:hover {
-  color: #102654b3
+  color: rgba($color-main, 0.7);
 }
 
 .tabs__control:hover:before {
-  background-color: #787878
+  background-color: $color-tabs-border;
 }
 
 .tabs__control:focus {
-  color: #102654
+  color: $color-main;
 }
 
 .tabs__control:focus:before {
-  background-color: #102654
+  background-color: $color-main;
 }
 
 .tabs__control:active {
-  color: #102654
+  color: $color-main;
 }
 
 .tabs__control:active:before {
-  background-color: #ed0233
+  background-color: $bg-red;
 }
 
 .tabs__control:disabled {
-  color: #102654;
-  opacity: .3;
-  pointer-events: none
+  color: $color-main;
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .tabs__control:disabled:before {
-  background-color: #102654
+  background-color: $color-main;
 }
 
 .tabs__control--active {
-  color: #102654;
-  pointer-events: none
+  color: $color-main;
+  pointer-events: none;
 }
 
 .tabs__control--active:before {
-  background-color: #d10a42
+  background-color: $color-red-tub;
 }
 
 .tabs__control--active:focus {
-  color: #102654
+  color: $color-main;
 }
 
 .tabs__control--active:focus:before {
-  background-color: #d10a42
+  background-color: $color-red-tub;
 }
 
 .tabs__element {

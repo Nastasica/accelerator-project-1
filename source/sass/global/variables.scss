@@ -14,10 +14,10 @@ $color-outline-button: rgba(28, 51, 116, 1);
 $gradient-border: linear-gradient(148.82deg, rgb(209, 10, 66) 0.85%, rgb(0, 53, 159) 100%);
 $gradient-button: linear-gradient(97.05deg, rgb(237, 2, 51) 17.6%, rgb(0, 62, 183) 95.31%);
 $color-red-tub: rgba(209, 10, 66, 1);
-$color-blue-text-button:  rgba(16, 58, 174, 1);
+$color-blue-text-button: rgba(16, 58, 174, 1);
 $color-black: rgba(0, 0, 0, 1);
 $color-button-disabled: rgba(200, 201, 204, 1);
-
+$color-tabs-border: rgba(120, 120, 120, 1);
 
 // Фон
 $bg-light: rgba(248, 249, 252, 1);
@@ -25,22 +25,20 @@ $bg-red: rgba(237, 2, 51, 1);
 $bg-blue: rgba(28, 51, 116, 1);
 $bg-dark-blue: rgba(16, 38, 84, 1);
 $bg-dark: rgba(3, 10, 26, 1);
-$gradient-main: linear-gradient(
-  90deg,
-  rgb(28, 52, 119) 0%,
-  rgb(28, 52, 119) 0.01%,
-  rgb(26, 53, 120) 39.11%,
-  rgb(115, 24, 75) 75.5%,
-  rgb(180, 2, 42) 100%
-);
+$gradient-main: linear-gradient(90deg,
+    rgb(28, 52, 119) 0%,
+    rgb(28, 52, 119) 0.01%,
+    rgb(26, 53, 120) 39.11%,
+    rgb(115, 24, 75) 75.5%,
+    rgb(180, 2, 42) 100%);
+$opacity-video: rgba(20, 54, 122, 1);
+ $bg-footer: rgba(3, 10, 26, 1);
 
-$bg-footer: rgba(3, 10, 26, 1);
+  // Форма
+  $color-error: rgba(255, 18, 31, 1);
 
-// Форма
-$color-error: rgba(255, 18, 31, 1);
+  // Viewports
 
-// Viewports
-
-$tablet-width: 768px;
-$desktop-width: 1336px;
-$mobile-width-only: 767px;
+  $tablet-width: 768px;
+  $desktop-width: 1336px;
+  $mobile-width-only: 767px;

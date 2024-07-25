@@ -13,6 +13,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
@@ -55,10 +56,9 @@
   border: 1px solid transparent;
 }
 
-.juri .juri__slider-button-prev::after,
-.juri .juri__slider-button-next::after {
-  @media (min-width: $tablet-width) {
-    content: "";
+.juri .juri__slider-button-prev::after{
+  content: "";
+  background-image: url("../../img/sprite/arrow-prev.svg");
     display: block;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -66,7 +66,21 @@
     left: 50%;
     width: 18px;
     height: 32px;
-    background-color: $color-main;
+
+
+}
+.juri .juri__slider-button-next::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    background-image: url("../../img/sprite/arrow-next.svg");
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 32px;
+
   }
 }
 
@@ -89,8 +103,8 @@
 }
 
 .juri .juri__slider-button--disabled {
-  opacity: .3;
-  pointer-events: none;
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 
 .juri__pagination {
@@ -169,8 +183,8 @@
   }
 }
 
-.juri__preview:hover + .juri__detail,
-.juri__preview:focus + .juri__detail {
+.juri__preview:hover+.juri__detail,
+.juri__preview:focus+.juri__detail {
   display: flex;
   flex-direction: column;
   align-items: center;

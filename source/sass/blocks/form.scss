@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  row-gap: 36px;
+  row-gap: 14px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -20,11 +20,13 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
+  padding: 0;
   text-align: left;
   width: 100%;
   background-color: $bg-dark-blue;
   color: $color-border-input;
   border: none;
+  padding-bottom: 4px;
   border-bottom: 1px solid $color-border-input;
   outline: none;
 
@@ -58,7 +60,7 @@
   font-weight: 400;
   line-height: 22px;
   text-align: left;
-  color: rgba(255, 18, 31, 1);
+  color: $color-error;
   display: none;
 }
 
@@ -70,6 +72,7 @@
   color: $color-white;
   background: transparent;
   border: 2px solid $color-white;
+  padding: 23px 47px;
 
   @media (min-width: $tablet-width) {
     width: 100%;

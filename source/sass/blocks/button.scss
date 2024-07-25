@@ -9,6 +9,7 @@
   border: 2px solid $color-main;
   cursor: pointer;
 }
+
 .button:hover {
   background-color: $color-white;
   color: $color-blue-text-button;
@@ -23,15 +24,15 @@
 }
 
 .button:active {
-background-attachment: $color-white;
-color: $color-main;
-outline: none;
+  background-attachment: $color-white;
+  color: $color-main;
+  outline: none;
 }
 
 .button .disabled {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: rgba(255, 255, 255, 0.5);
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba($color-white, 0.5);
+  color: rgba($color-white, 0.5);
+  border: 2px solid rgba($color-white, 0.5);
   cursor: not-allowed;
   pointer-events: none;
 }
