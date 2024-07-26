@@ -1,13 +1,17 @@
 .abonements {
   min-height: 400px;
   padding-top: 40px;
+  background-color: $bg-light;
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/price-decor-tablet.png");
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
-    background-size: 275px 328px;
+    background-size: 320px 388px;
+    margin: 0;
+    padding-top: 21px;
+    padding-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +23,7 @@
 
   @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
     background-image: url("../../img/price-decor-tablet@2x.png");
-    background-size: 275px 328px;
+    background-size: 320px 388px;
   }
 
   @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
@@ -35,7 +39,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 35px;
-    padding-bottom: 22px;
+    padding-bottom: 27px;
   }
 }
 
@@ -65,7 +69,7 @@
   @media (min-width: $tablet-width) {
     width: 380px;
     padding: 65px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 }
 
@@ -80,6 +84,7 @@
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
+    padding-bottom: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,6 +96,9 @@
 .abonements__description p {
   margin: 0;
   padding-bottom: 61px;
+  @media (min-width: $tablet-width) {
+   padding-bottom: 78px;
+  }
 }
 
 .abonements__price {
@@ -102,7 +110,7 @@
   padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
+   padding-bottom: 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -128,6 +136,7 @@
   @media (min-width: $tablet-width) {
     font-size: 100px;
     line-height: 150px;
+    bottom: 22px;
 
   }
 
@@ -138,6 +147,16 @@
   display: inline-block;
   margin-top: 5px;
   color: $color-blue-accent;
+}
+
+.abonements__price svg {
+  width: 24px;
+  height: 33px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 42px;
+  }
 }
 
 .abonements__button {
@@ -154,6 +173,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 27px 44px;
+    display: block;
+    width: 100%;
   }
 
   &:hover {

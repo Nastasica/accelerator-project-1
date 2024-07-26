@@ -3,6 +3,9 @@
   background-color: $color-white;
   padding-bottom: 5px;
   margin: 0;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 27px;
+  }
 }
 
 .offers__inner {
@@ -97,6 +100,10 @@
   background-color: transparent;
   border: 1px solid transparent;
   cursor: pointer;
+  @media (min-width: $tablet-width) {
+   padding: 9px 0;
+   margin-top: auto;
+  }
 
   &:hover {
     text-decoration-color: $color-outline-button;
@@ -135,8 +142,9 @@
     text-align: left;
     font-size: 26px;
     line-height: 26px;
-    padding-bottom: 10px;
+    margin-bottom: 8px;
   }
+
 }
 
 .offers__description p {
@@ -149,13 +157,11 @@
     padding: 0;
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 30px;
+    padding-bottom: 21px;
+    margin: 0;
+    text-align: left;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    margin-bottom: 40px;
-  }
 }
 
 .offers__img {
@@ -176,7 +182,7 @@
 
   @media (min-width: $tablet-width) {
     width: 400px;
-    height: 462px;
+    height:auto;
     max-width: none;
   }
 
@@ -199,7 +205,7 @@
   margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    text-align: left;
+   align-items: start;
   }
 
   @media (min-width: $desktop-width) {
@@ -214,6 +220,7 @@
   margin-bottom: 35px;
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: row;
     align-items: stretch;
   }
 
@@ -228,13 +235,10 @@
     @media (min-width: $tablet-width) {
       font-size: 18px;
       line-height: 24px;
-      padding-bottom: 160px;
+      padding-bottom: 152px;
       text-align: left;
     }
-
-
   }
-
 
   @media (min-width: $desktop-width) {
     width: 100%;
@@ -245,6 +249,11 @@
 .offers__description--main p {
   padding: 0;
   margin: 0;
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .offers__title--main span {
@@ -260,6 +269,7 @@
     font-size: 70px;
     line-height: 70px;
     text-align: left;
+    padding-bottom: 41px;
 
   }
 }
@@ -270,7 +280,7 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-    margin-top: auto;
+    padding: 5px 0px 5px 0px;
   }
 
   &:hover {
@@ -319,5 +329,6 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    padding-bottom: 19px;
   }
 }
